@@ -35,28 +35,32 @@
   border-left: 1px solid @health-bar-inner-color;
 }
 
-.health-bar-over-capacity {
-  background-color: @health-bar-over-capacity-color;
+.health-bar-healthy {
+  background-color: @task-health-healthy-color;
 }
 
 .health-bar-unhealthy {
-  background-color: @health-bar-unhealthy-color;
+  background-color: @task-health-unhealthy-color;
+}
+
+.health-bar-unknown {
+  background-color: @task-health-unknown-color;
 }
 
 .health-bar-staged {
-  background-color: @health-bar-staged-color;
+  background-color: @task-health-staged-color;
 }
 
-.health-bar-healthy {
-  background-color: @health-bar-healthy-color;
-}
-
-.health-bar-running {
-  background-color: @health-bar-running-color;
+.health-bar-over-capacity {
+  background-color: @task-health-over-capacity-color;
 }
 
 .health-bar-unscheduled {
   background-color: @health-bar-inner-color;
+}
+
+.health-bar-running {
+  background-color: @task-health-running-color;
 }
 
 .loading-bar {
@@ -76,7 +80,7 @@
       @health-bar-inner-color 75%,
       rgba(42, 44, 49, 0) 75%
     );
-    background-color: @health-bar-running-color;
+    background-color: @task-health-running-color;
     background-size: 12px 12px;
     box-shadow: inset 0 10px 0 rgba(255, 255, 255, 0.2);
     animation: move 2s linear infinite;
